@@ -1,0 +1,536 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Welcome and Social Icons Section */
+.welcome-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.welcome-social span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  color: #666;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4500; /* Thay đổi màu khi hover */
+}
+
+
+/* Header Thông Tin */
+.header-info {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.header-info .info-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-info .icon-text {
+  margin-right: 5px;
+  color: #ff4500;
+}
+
+/* Định dạng chung cho menu điều hướng */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  justify-content: center;
+}
+
+.navbar-menu a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.navbar-menu a:hover {
+  background-color: #444;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none; /* Ẩn menu thả xuống mặc định */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f8f8f8;
+  color: #ff4500;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Hiển thị menu thả xuống khi hover vào mục "Dịch vụ" */
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-items: right;
+}
+
+.search-form input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #e63900;
+}
+
+.hero {
+  background-image: url('/images/Banner00.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ffffff; /* Màu mặc định cho liên kết */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f3ff19; /* Màu khi hover */
+  text-decoration: underline;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Section Dịch vụ */
+.services-section {
+  background-color: #fafafa;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.service-wrapper {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center;
+  gap: 20px;
+  overflow: hidden; /* Ẩn phần dịch vụ không hiển thị */
+  width: 720px; /* Chỉ hiển thị 4 mục */
+  margin: 0 auto; /* Đảm bảo phần này nằm giữa trang */
+  scroll-behavior: smooth; /* Cuộn mượt mà */
+}
+
+.service-item {
+  flex-shrink: 0;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Nút điều khiển dịch vụ */
+.service-nav {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 220px;
+}
+
+.service-nav.prev {
+  left: 10px;
+}
+
+.service-nav.next {
+  right: 10px;
+}
+
+.service-nav i {
+  font-size: 30px; /* Kích thước icon mũi tên */
+}
+
+/* Phần Quy trình bảo dưỡng động cơ ô tô */
+.engine-maintenance {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.engine-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.engine-title h2 {
+    display: inline-block;
+    background-color: #fbc02d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 28px;
+}
+
+.engine-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.engine-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.engine-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.engine-description {
+    flex: 1 1 60%;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.engine-description p {
+    margin-bottom: 20px;
+}
+
+.engine-description strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-promotion {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.promotion-text p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.promotion-text p:first-child {
+  color: #e74c3c; /* Màu đỏ cho phần ưu đãi */
+  font-weight: bold;
+}
+
+.promotion-text .phone-icon {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+.promotion-text strong {
+  color: #e74c3c; /* Màu đỏ để nhấn mạnh số hotline */
+}
+
+.promotion-text p:nth-last-child(2) {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.promotion-text p:last-child {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Phần Các dịch vụ bảo dưỡng */
+.service-maintenance {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.section-title h2 {
+  display: inline-block;
+  background-color: #fbc02d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-item {
+  flex: 1 1 30%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #f8f4e5; /* Viền màu vàng nhạt */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Phần các thông tin mới */
+.latest-news {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.section-title h2 {
+  display: inline-block;
+  background-color: #fbc02d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.news-carousel {
+  margin: 0 auto;
+}
+
+.news-item {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-description h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.news-description p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Phần Quy trình làm việc cực kỳ nhanh chóng*/
+.work-process {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.section-title h2 {
+  display: inline-block;
+  background-color: #fbc02d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.process-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.process-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.process-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.process-images img {
+  width: 48%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.process-description p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.process-description strong {
+  color: #e74c3c;
+}

@@ -1,0 +1,333 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Welcome and Social Icons Section */
+.welcome-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.welcome-social span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  color: #666;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4500; /* Thay đổi màu khi hover */
+}
+
+
+/* Header Thông Tin */
+.header-info {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.header-info .info-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-info .icon-text {
+  margin-right: 5px;
+  color: #ff4500;
+}
+
+/* Định dạng chung cho menu điều hướng */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  justify-content: center;
+}
+
+.navbar-menu a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.navbar-menu a:hover {
+  background-color: #444;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none; /* Ẩn menu thả xuống mặc định */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f8f8f8;
+  color: #ff4500;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Hiển thị menu thả xuống khi hover vào mục "Dịch vụ" */
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-items: right;
+}
+
+.search-form input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #e63900;
+}
+
+.hero {
+  background-image: url('/images/Banner00.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ffffff; /* Màu mặc định cho liên kết */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f3ff19; /* Màu khi hover */
+  text-decoration: underline;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.map-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.map-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.map-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.contact-schedule {
+  padding: 50px 200px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-info {
+  width: 48%;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-form form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form form textarea {
+  height: 100px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.form-buttons .submit-button {
+  background-color: #3b82f6;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.form-buttons .submit-button:hover {
+  background-color: #2563eb;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-info a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.icon-location,
+.icon-phone,
+.icon-envelope,
+.icon-globe {
+  margin-right: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 16px;
+  appearance: none; /* Ẩn biểu tượng mặc định của select */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><path fill="none" stroke="%23333" stroke-width="2" d="M0 0l5 5 5-5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+option {
+  padding: 10px;
+}

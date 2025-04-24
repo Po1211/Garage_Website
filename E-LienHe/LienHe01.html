@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garage AHK - Liên hệ</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <!-- File CSS tùy chỉnh -->
+    <link rel="stylesheet" href="LienHe01.css">
+    <link rel="stylesheet" href="/ThanhSidebar.css">
+    <link rel="stylesheet" href="/PhanFooter.css">
+
+</head>
+<body>
+
+    <!-- Nút Menu -->
+<div class="menu-container">
+    <div id="menu-icon" class="menu-icon">&#9776;</div> <!-- Biểu tượng Menu -->
+  </div>
+  
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <!-- Logo ở đầu sidebar -->
+     <a href="/A-TrangChu/TrangChu02.html" class="sidebar-logo">
+      <img src="/icons/Logo.jpg" alt="Logo" />
+     </a>
+
+     <!-- Icon tìm kiếm ở cuối sidebar -->
+     <div class="sidebar-search">
+      <a href="/D-TinTucMain/TinTucSearch.html">
+      <i class="fa fa-search"></i> <!-- Icon tìm kiếm -->
+      </a>
+    </div>
+  </div>
+  
+  <!-- Overlay -->
+  <div id="page-overlay" class="page-overlay">
+    <ul class="menu-items">
+      <li><a href="/A-TrangChu/TrangChu02.html" class="active">Trang Chủ</a></li>
+      <li><a href="/B-GioiThieu/GioiThieu01.html">Giới Thiệu</a></li>
+  
+      <li class="has-submenu">
+        <a href="/C-DichVu/01-BaoTri/BaoTri.html" class="expandable">Dịch vụ</a>
+        <ul class="submenu">
+          <li><a href="/C-DichVu/01-BaoTri/BaoTri.html">Bảo trì</a></li>
+          <li><a href="/C-DichVu/02-GamMay/GamMay01.html">Gầm máy</a></li>
+          <li><a href="/C-DichVu/03-PhucHoi/PhucHoi.html">Phục hồi</a></li>
+        </ul>
+      </li>
+  
+      <li><a href="/D-TinTucMain/TinTucMain.html">Tin Tức</a></li>
+  
+      <li><a href="#">Liên Hệ</a></li>
+    </ul>
+  </div>
+
+    <!-- Phần tiêu đề chính (Hero Section) -->
+    <section class="hero">
+      <div class="hero-content">
+          <h2>LIÊN HỆ</h2>
+          <p><a href="/A-TrangChu/TrangChu02.html">Trang chủ</a> / Liên hệ</p>
+      </div>
+    </section>
+
+    <!-- Phần Google Maps -->
+    <section class="map-section">
+      <h1> </h1>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.978922698849!2d105.8739419!3d21.0028673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8a53b4a489%3A0xe00dac89e90531b3!2zR2FyYSDDtCB0w7QgUGjDumMgSG_DoG4!5e0!3m2!1svi!2s!4v1728310649355!5m2!1svi!2s" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Phần Liên hệ đặt lịch -->
+<section class="contact-schedule">
+  <div class="container">
+      <div class="contact-form">
+          <h2>Liên hệ đặt lịch</h2>
+          <form action="#">
+              <label for="name">Họ và tên*</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+
+              <label for="phone">Số điện thoại*</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="service">Loại dịch vụ*</label>
+              <select id="service" name="service" required>
+                  <option value="" disabled selected hidden> </option>
+                  <option value="cuu-ho-giao-thong">Cứu hộ giao thông</option>
+                  <option value="tu-van-bao-hiem">Tư vấn bảo hiểm</option>
+                  <option value="bao-tri-xe">Bảo trì xe</option>
+                  <option value="bao-duong-xe">Bảo dưỡng xe</option>
+                  <option value="dich-vu-gam-may">Dịch vụ gầm máy</option>
+                  <option value="cham-soc-xe">Chăm sóc xe</option>
+                  <option value="tu-van-bao-hiem-liberty">Tư vấn bảo hiểm Liberty</option>
+              </select>
+
+              <label for="date">Ngày sử dụng dịch vụ</label>
+              <input type="date" id="date" name="date">
+
+              <label for="address">Địa chỉ*</label>
+              <input type="text" id="address" name="address" required>
+
+              <label for="request">Yêu cầu thêm</label>
+              <input type="text" id="request" name="request">
+
+              <div class="form-buttons">
+                  <button type="reset">Nhập lại</button>
+                  <button type="submit" class="submit-button">Gửi yêu cầu</button>
+              </div>
+          </form>
+      </div>
+
+      <div class="contact-info">
+          <h2>Thông tin liên hệ</h2>
+          <p><strong>TRUNG TÂM Ô TÔ QUANG ĐỨC</strong></p>
+          <p><i class="icon-location"></i> Trụ sở: 335 Nguyễn Khoái, Thanh Long, Hai Bà Trưng, Hà Nội</p>
+          <p><i class="icon-phone"></i> Hotline: 0962677726</p>
+          <p><i class="icon-envelope"></i> Email: Garaquangduc1075@gmail.com</p>
+          <p><i class="icon-globe"></i> Website: <a href="/A-TrangChu/TrangChu02.html" target="_blank">Tên miền</a></p>
+      </div>
+  </div>
+</section>
+
+    <!-- Phần Footer -->
+    <div class="footer-section">
+      <div class="footer-container">
+        
+        <!-- Logo và thông tin liên hệ -->
+        <div class="footer-column">
+          <img src="/icons/Logo.jpg" alt="Garage Logo" class="footer-logo">
+          <h3>GARAGE QUANG ĐỨC</h3>
+          <ul>
+            <li><i class="fa fa-map-marker"></i><a href="https://maps.app.goo.gl/kk4zgrAmjhvnoJTW9" target="_blank"> <strong>Địa chỉ: </strong> 335 Nguyễn Khoái, Thanh Long, Hai Bà Trưng, Hà Nội </a></li>
+                <li><i class="fa fa-phone"></i><a href="tel:0962677726" target="_blank"> <strong>Hotline: </strong> 0962677726 </a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:Garaquangduc1075@gmail.com" target="_blank"> <strong>Email: </strong> Garaquangduc1075@gmail.com</a></li>
+
+                <a href="//www.dmca.com/Protection/Status.aspx?ID=52b584c4-d79c-4d9e-b37c-4b8f5771e4c1" title="DMCA.com Protection Status" class="dmca-badge"> 
+                    <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120l.png?ID=52b584c4-d79c-4d9e-b37c-4b8f5771e4c1"  alt="DMCA.com Protection Status" />
+                </a>  
+                <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+          </ul>
+        </div>
+    
+        <!-- Thông tin công ty -->
+        <div class="footer-column">
+          <h4>Thông tin công ty</h4>
+          <ul>
+            <li><a href="/A-TrangChu/TrangChu02.html">Trang chủ</a></li>
+                <li><a href="/B-GioiThieu/GioiThieu01.html">Giới thiệu</a></li>
+                <li><a href="/C-DichVu/01-BaoTri/BaoTri.html">Dịch vụ</a></li>
+                <li><a href="/D-TinTucMain/TinTucMain.html">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+    
+        <!-- Dịch vụ -->
+        <div class="footer-column">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a href="/C-DichVu/01-BaoTri/BaoTri.html">Bảo trì, bảo dưỡng</a></li>
+                <li><a href="/C-DichVu/02-GamMay/GamMay01.html">Dịch vụ gầm máy</a></li>
+                <li><a href="/C-DichVu/03-PhucHoi/PhucHoi.html">Phục hồi xe tai nạn - Va chạm</a></li>
+          </ul>
+        </div>
+    
+        <!-- Giờ làm việc -->
+        <div class="working-hours-box">
+          <div class="working-hours-icon">
+            <img src="/icons/Clock-02.png" alt="Clock Icon">
+          </div>
+          <h4>GIỜ LÀM VIỆC</h4>
+          <ul>
+            <li>Thứ 2: 9h00 - 19h00</li>
+            <li>Thứ 3: 9h00 - 19h00</li>
+            <li>Thứ 4: 9h00 - 19h00 </li>
+            <li>Thứ 5: 9h00 - 19h00 </li>
+            <li>Thứ 6: 9h00 - 19h00 </li>
+            <li>Thứ 7: 9h00 - 19h00 </li>
+        </div>
+        
+      </div>
+    </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Garage AHK. All rights reserved.</p>
+  </footer>
+
+    <!-- Social Icons Fixed -->
+    <div class="social-icons-fixed">
+        <a href="https://www.facebook.com/garaphuchoan" target="_blank" class="social-icon facebook"><img src="/icons/Logo FB.webp" alt="Facebook"></a>
+        <a href="#" target="_blank" class="social-icon zalo"><img src="/icons/Logo Zalo.jpg" alt="Zalo"></a>
+        <a href="tel:0923387840" target="_blank" class="icon-phone"><img src="/icons/Logo Phone.png" alt="Phone"></a>
+        <a href="https://www.facebook.com/garaphuchoan" target="_blank" class="social-icon messenger"><img src="/icons/Logo Mes.png" alt="Messenger"></a>
+        <a href="https://maps.app.goo.gl/kk4zgrAmjhvnoJTW9" target="_blank" class="social-icon maps"><img src="/icons/Logo Map.jpg" alt="Google Maps"></a>
+      </div>
+
+<script src="/ThanhSidebar.js"></script>
+
+</body>
+</html>

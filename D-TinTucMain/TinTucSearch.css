@@ -1,0 +1,167 @@
+ /* Inline CSS for a simple layout, customize as needed */
+ html,
+ body {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     flex-direction: column;
+     background-color: #f9f9f9;
+     color: #333;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .search-header {
+     text-align: center;
+     margin-top: 50px;
+     font-size: 36px;
+     font-weight: bold;
+ }
+
+ /* Search Container */
+ .search-container {
+     display: flex;
+     align-items: center;
+     margin-top: 20px;
+     border-bottom: 2px solid #ccc;
+     /* Line under the search bar */
+     width: 80%;
+     align-self: center;
+ }
+
+ .search-input {
+     border: none;
+     /* Remove the box */
+     outline: none;
+     /* Remove the outline */
+     font-size: 16px;
+     padding: 10px;
+     flex: 1;
+     background-color: transparent;
+     /* Make the background transparent */
+     color: #333;
+     /* Text color */
+ }
+
+ .search-button {
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+     color: #b22222;
+     /* Color for the search icon */
+     padding: 5px;
+ }
+
+ /* Result Default Message */
+ .results p {
+     font-size: 16px;
+     color: #666;
+     text-align: left;
+     /* Align the message to the left */
+     margin-top: 5px;
+     margin-bottom: 10px;
+     padding: 0 160px;
+ }
+
+ .search-button:hover {
+     background-color: #a11c1c;
+ }
+
+ .results {
+     flex: 1;
+     width: 80%;
+     max-width: 1200px;
+     text-align: center;
+     margin-top: 10px;
+     min-height: 55vh;
+     /* Increase minimum height to push footer lower */
+ }
+
+ .news-card {
+     display: flex;
+     align-items: flex-start;
+     /* Align items to the top */
+     margin-bottom: 20px;
+     border-bottom: 1px solid #ddd;
+     padding-bottom: 15px;
+ }
+
+ .news-image img {
+     width: 150px;
+     height: 100px;
+     object-fit: cover;
+     border-radius: 4px;
+     margin-right: 15px;
+ }
+
+
+ .news-details {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     /* Distribute space between title and date */
+     text-align: left;
+     /* Align text to the left */
+     height: 100%;
+     /* Make the container take full height */
+     color: inherit;
+     /* Inherit the text color from the parent element */
+     text-decoration: none;
+     /* Remove the underline */
+ }
+
+ .news-title {
+     font-size: 18px;
+     font-weight: bold;
+     color: #333;
+     margin: 0;
+ }
+
+ .news-date {
+     font-size: 14px;
+     color: #777;
+ }
+
+ a.news-card-link {
+     color: inherit;
+     /* Inherit the text color from the parent element */
+     text-decoration: none;
+     /* Remove the underline */
+ }
+
+ a.news-card-link:hover {
+     color: inherit;
+     /* Keep the text color the same on hover */
+     text-decoration: none;
+     /* Ensure underline does not appear on hover */
+ }
+
+ /* Pagination */
+ .pagination {
+     display: flex;
+     justify-content: center;
+     margin-top: 40px;
+ }
+
+ .page-link {
+     margin: 0 10px;
+     font-size: 18px;
+     color: #666;
+     padding: 10px 15px;
+     border: 2px solid #ddd;
+     background-color: #fff;
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     border-radius: 4px;
+ }
+
+ .page-link.active,
+ .page-link:hover {
+     background-color: #d32f2f;
+     color: #fff;
+     border-color: #d32f2f;
+ }
